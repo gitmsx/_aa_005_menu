@@ -43,7 +43,7 @@ public class ButtonsClick : MonoBehaviour
 
         string[] buttonsSubStrSearch = new string[12];
         buttonsSubStrSearch[0] = "###1:";
-        buttonsSubStrSearch[1] = "###2:";
+        buttonsSubStrSearch[1] = "2";
         buttonsSubStrSearch[2] = "###3:";
         buttonsSubStrSearch[3] = "###4:";
 
@@ -66,11 +66,11 @@ public class ButtonsClick : MonoBehaviour
 
 
 
-        string substring ;
+ 
         print("stringsLevel.Length " + stringsLevel.Length.ToString());
         for (int i = 0; i < stringsLevel.Length; i++)
         {
-      //      print(stringsLevel[i]);
+             print(stringsLevel[i]);
             for (int j = 0; j < 4; j++)
             {
                 
