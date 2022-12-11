@@ -810,7 +810,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: " \u041F\u0440\u0438 \u044D\u0442\u043E\u043C \u0442\u0438\u043F\u043E\u0432
+    \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0440\u043D\u044B\u0445 \u044F\u0434\u0435\u0440
+    \u0432\u0441\u0435\u0433\u043E \u043B\u0438\u0448\u044C \u0434\u0432\u0430 \u2014
+    ARM Cortex-A78 \u0438 ARM Cortex-A55."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -840,10 +843,10 @@ MonoBehaviour:
   m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 11
+  m_fontSizeMax: 24
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -873,7 +876,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 7, y: 7, z: 7, w: 7}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -945,7 +948,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: ' Dimensity 8200  '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -975,10 +978,10 @@ MonoBehaviour:
   m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 11
+  m_fontSizeMax: 24
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -2762,7 +2765,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: "MediaTek \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u043B\u0430
+    \u043C\u043E\u0449\u043D\u044B\u0439 \u0441\u043C\u0430\u0440\u0442\u0444\u043E\u043D\u043D\u044B\u0439
+    \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0440 \u0441 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u043E\u0439
+    320 \u041C\u043F \u043A\u0430\u043C\u0435\u0440 Xiaomi \u0443\u0436\u0435 \u0433\u043E\u0442\u043E\u0432\u0438\u0442
+    \u043D\u0430 \u0435\u0433\u043E \u043E\u0441\u043D\u043E\u0432\u0435 \u043D\u043E\u0432\u044B\u0439
+    \u0434\u0435\u0432\u0430\u0439\u0441MediaTek \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u043B\u0430
+    \u043C\u043E\u0449\u043D\u044B\u0439 \u0441\u043C\u0430\u0440\u0442\u0444\u043E\u043D\u043D\u044B\u0439
+    \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0440 \u0441 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u043E\u0439
+    320 \u041C\u043F \u043A\u0430\u043C\u0435\u0440 Xiaomi \u0443\u0436\u0435 \u0433\u043E\u0442\u043E\u0432\u0438\u0442
+    \u043D\u0430 \u0435\u0433\u043E \u043E\u0441\u043D\u043E\u0432\u0435 \u043D\u043E\u0432\u044B\u0439
+    \u0434\u0435\u0432\u0430\u0439\u0441"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2789,13 +2802,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 16
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 11
+  m_fontSizeMax: 24
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -2825,7 +2838,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 7, y: 7, z: 7, w: 7}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
