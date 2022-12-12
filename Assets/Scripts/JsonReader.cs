@@ -15,9 +15,10 @@ public class JsonReader : MonoBehaviour
     void Start()
     {
 
-        var json = "W:\\unity\\_aa_005_menu\\Assets\\Resources\\Employees.json";
-        MyemployeeList = JsonUtility.FromJson<EmployeeList>(json);
+        print(jsonFile.text);
 
+        MyemployeeList = JsonUtility.FromJson<EmployeeList>(jsonFile.text);
+        
 
 
 
