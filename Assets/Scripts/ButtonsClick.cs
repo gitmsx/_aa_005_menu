@@ -3,6 +3,7 @@ using System.Data.SqlTypes;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static System.Net.Mime.MediaTypeNames;
 
 
 public class ButtonsClick : MonoBehaviour
@@ -10,6 +11,12 @@ public class ButtonsClick : MonoBehaviour
     //Make sure to attach these Buttons in the Inspector
     public Button Button0, Button1, Button2, Button3;
     [SerializeField] TextMeshProUGUI TextButton0, TextButton1, TextButton2, TextButton3;
+
+    
+
+
+
+
 
     void Start()
     {
@@ -21,7 +28,7 @@ public class ButtonsClick : MonoBehaviour
 
     }
 
-
+    
 
 
 
@@ -86,7 +93,53 @@ public class ButtonsClick : MonoBehaviour
     {
         //Output this to console when the Button2 is clicked
         Debug.Log(message);
+        list11();
+
     }
+
+
+    public TextAsset jsonFile;
+    public EmployeeList MyemployeeList = new EmployeeList();
+
+    public void list11()
+    {
+        MyemployeeList = JsonUtility.FromJson<EmployeeList>(jsonFile.text);
+
+        TextMeshProUGUI[] TextBbuttonsGO = new TextMeshProUGUI[12];
+        TextBbuttonsGO[0] = TextButton0;
+        TextBbuttonsGO[1] = TextButton1;
+        TextBbuttonsGO[2] = TextButton2;
+        TextBbuttonsGO[3] = TextButton3;
+
+        int ii = 0;
+        foreach (Employee e in MyemployeeList.employees)
+        {
+            
+            if (ii< 4)
+            {
+                TextBbuttonsGO[ii].text = " firstName =" + e.firstName + " lastName " + e.lastName + " Age " + e.age.ToString();
+            }
+            print(" firstName =" + e.firstName + " lastName " + e.lastName + " Age " + e.age.ToString());
+            ii++;
+        }
+    }
+
+
+    [System.Serializable]
+    public class Employee
+    {
+        public string firstName;
+        public string lastName;
+        public int age;
+
+    }
+
+    public class EmployeeList
+    {
+        public Employee[] employees;
+
+    }
+
 
     void ButtonClicked(int buttonNo)
     {
