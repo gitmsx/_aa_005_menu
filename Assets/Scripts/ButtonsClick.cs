@@ -1,5 +1,6 @@
 
-using System.Data.SqlTypes;
+
+using System.IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -145,6 +146,59 @@ public class ButtonsClick : MonoBehaviour
     {
         //Output this to console when the Button3 is clicked
         Debug.Log("Button clicked = " + buttonNo);
+
+        string path = "Assets/Resources/Employees.json";
+        if (FileExists(path))
+        {
+            JsonReader2 jsonReader2 = new JsonReader2();
+            jsonReader2.list11(path);
+
+        }
+
+
+        foreach (Employee e in MyemployeeList.employees)
+        {
+            Debug.Log(e.lastName);
+            Debug.Log(e);
+            Debug.Log(e.age);
+            Debug.Log(e.firstName);
+            Debug.Log("************ 77777777777777777777777777 ********");
+
+
+        }
+
+
+
+
+
+
+    }
+
+
+    bool FileExists(string FileName)
+    {
+
+
+        if (FileName == null || FileName.Length == 0)
+            return false;
+        //{
+        //    throw new ArgumentNullException("FileName");
+        //}
+
+        // Check to see if the file exists.
+        FileInfo fInfo = new FileInfo(FileName);
+
+        // You can throw a personalized exception if
+        // the file does not exist.
+        if (!fInfo.Exists)
+            return false;
+
+        //{
+        //    throw new FileNotFoundException("The file was not found.", FileName);
+        //}
+        return true;
+
+
     }
 }
 
