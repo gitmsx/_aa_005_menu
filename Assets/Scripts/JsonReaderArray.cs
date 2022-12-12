@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class JsonReader : MonoBehaviour
+
+public class JsonReaderArray : MonoBehaviour
 {
     public TextAsset jsonFile;
 
@@ -13,10 +14,11 @@ public class JsonReader : MonoBehaviour
     {
         MyemployeeList = JsonUtility.FromJson<EmployeeList>(jsonFile.text);
 
-        foreach (Employee e in MyemployeeList.employees)
-        {
-            print(" firstName ="+ e.firstName + " lastName " +e.lastName+" Age "+e.age.ToString());
+        foreach(Employee e in MyemployeeList.employees) {
+            print(e.age);
         }
+
+
     }
 
 
